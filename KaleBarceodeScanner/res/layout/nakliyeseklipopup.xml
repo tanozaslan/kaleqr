@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/popupborder">
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:weightSum="10"
+	    android:paddingBottom="15dp"
+	    >
+	    <TextView android:id="@+id/twUrunKod"
+		  android:textSize="16dp"
+		  android:textStyle="bold"
+		  android:textColor="#FFFFFF"
+		  android:layout_width="fill_parent"
+		  android:layout_height="wrap_content"
+		  android:text="Nakliye Şeklini Seçin"
+	   	  android:gravity="center"
+	   	  android:padding="15dp"/>
+	    <View
+		    android:layout_width="fill_parent"
+		    android:layout_height="2dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#3973A9"
+		    />
+	    </LinearLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="vertical"
+	    android:gravity="center"
+	    android:weightSum="10"
+	    android:paddingBottom="15dp"
+	    >    
+	<RadioGroup
+	    android:id="@+id/rgNakliyeSekli"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" 
+	    android:gravity="left">	
+	    <RadioButton
+	        android:id="@+id/rdKamyon"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="Kamyon" />	
+	    <RadioButton
+	        android:id="@+id/rdTren"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Tren" />
+	    <RadioButton
+	        android:id="@+id/rdGemi"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="Gemi" />
+	
+	    <RadioButton
+	        android:id="@+id/rdKargo"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Kargo" />
+	    <RadioButton
+	        android:id="@+id/rdKendiAraci"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:checked="true"
+	        android:text="Kendi Aracı" />
+	</RadioGroup>
+	</LinearLayout>
+</LinearLayout>

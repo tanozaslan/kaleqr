@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" > 
+  	<LinearLayout
+		    android:id="@+id/llMain"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"> 
+		 <LinearLayout
+		    android:id="@+id/llBayii"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="10">  
+			    <TextView
+					android:layout_weight="5"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/bayiiCodeHint"
+			        android:textSize="22dp">
+			    </TextView>
+			    <EditText
+			        android:layout_weight="5"
+			        android:id="@+id/etBayiiKodu"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/bayiiCodeHint">
+			    </EditText>
+		 </LinearLayout>
+		<LinearLayout
+		    android:id="@+id/llUrunKodu"
+		    android:layout_below="@id/llBayii"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="2">
+		    </LinearLayout>
+		    <LinearLayout
+		    android:id="@+id/llMiktar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="2">
+			    <TextView
+				    android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/siparisZamaniHint"
+			        android:textSize="22dp">
+			    </TextView>
+			    <EditText
+			        android:layout_weight="1"			        
+			        android:id="@+id/etSiparisZaman"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/siparisZamaniHint">
+			    </EditText>
+		    </LinearLayout>
+		    <LinearLayout
+		    android:id="@+id/llOdemeSekli"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="2"
+		    android:gravity="center">
+			    <TextView
+				    android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="Ödeme Şekli"
+			        android:textSize="22dp">
+			    </TextView>
+			    <EditText
+			        android:layout_weight="1"			        
+			        android:id="@+id/etOdemeSekli"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/odemeSekliHint"
+			        android:focusableInTouchMode="false">
+			    </EditText>
+		    </LinearLayout>
+		    <LinearLayout
+		    android:id="@+id/llNakliyeSekli"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="2"
+		    android:gravity="center">
+			    <TextView
+				    android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="Nakliye Şekli"
+			        android:textSize="22dp">
+			    </TextView>
+			    <EditText
+			        android:layout_weight="1"			        
+			        android:id="@+id/etNakliyeSekli"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/nakliyeSekliHint"
+			        android:focusableInTouchMode="false">
+			    </EditText>
+		    </LinearLayout>
+		    <LinearLayout
+		    android:id="@+id/llMiktar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="2">
+			    <TextView
+				    android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="@string/teslimZamaniHint"
+			        android:textSize="22dp">
+			    </TextView>
+			    <EditText
+			        android:layout_weight="1"			        
+			        android:id="@+id/etTeslimZaman"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:hint="@string/teslimZamaniHint">
+			    </EditText>
+		    </LinearLayout>
+		    <LinearLayout
+		    android:id="@+id/llMiktar"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal" 
+		    android:weightSum="2">
+			    <TextView
+				    android:layout_weight="1"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="Siparişi Alan"
+			        android:textSize="22dp">
+			    </TextView>
+			    <EditText
+			        android:layout_weight="1"			        
+			        android:id="@+id/etEmail"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:hint="e-posta">
+			    </EditText>
+		    </LinearLayout>		    		
+
+		       
+	</LinearLayout>
+	<EditText
+		android:id="@+id/etNotes"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@+id/footer"
+		android:layout_below="@+id/llMain"
+		android:hint="@string/notlarHint"
+		android:inputType="textMultiLine" 
+		android:gravity="top">
+		<requestFocus />
+	</EditText> 
+    <LinearLayout android:id="@+id/footer" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_alignParentBottom="true" style="@android:style/ButtonBar">
+    <Button android:id="@+id/btnPreview" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:text="@string/preview" />
+    <Button android:id="@+id/btnSend" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:text="@string/order" />
+	</LinearLayout>
+
+    
+                
+ </RelativeLayout>

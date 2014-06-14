@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, KaleBarceodeScannerActivity!</string>
+    <string name="app_name">KaleBarceodeScanner</string>
+    <string name="scan">Tara</string>
+    <string name="order">Sipariş Ver</string>
+    <string name="preview">Önizleme</string>
+    <string name="add">Ekle</string>
+    <string name="bayiiCodeHint">Bayii Kodu</string>
+    <string name="urunCodeHint">Ürün Kodu</string>
+    <string name="urunIsmiHint">Ürün İsmi</string>
+    <string name="odemeSekliHint">Ödeme Şekli</string>
+    <string name="nakliyeSekliHint">Nakliye Şekli</string>
+    <string name="miktarHint">Sipariş Miktarı</string>
+    <string name="siparisZamaniHint">Sipariş Tarihi</string>
+    <string name="teslimZamaniHint">Termin Tarihi</string>
+    <string name="notlarHint">Notlar</string>
+    <string name="fieldEmptyError">Lütfen kırmızı olan alanları doldurun</string>
+    <string name="urunArrayEmptyError">Lütfen en az 1 ürün ekleyiniz.</string>
+    
+    <string-array name="odeme_array">
+        <item>Ödeme Şekli</item>
+        <item>Peşin</item>
+        <item>Vadeli</item>
+    </string-array>
+
+    <string-array name="nakliye_array">
+        <item>Nakliye Şekli</item>
+        <item>Kamyon</item>
+        <item>Tren</item>
+        <item>Gemi</item>
+        <item>Kargo</item>
+        <item>Kendi Aracı</item>
+    </string-array>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    
+    
+    
+</resources>

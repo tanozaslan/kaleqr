@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popupborder"
+    >
+    <TextView
+        android:id="@+id/tv1PopUp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Test Pop-Up"
+        android:layout_alignParentTop="true"
+    />
+    <ScrollView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/svPopUp"
+        android:layout_below="@id/tv1PopUp"
+        android:layout_above="@id/footer">
+    <LinearLayout 
+    	android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">  
+        <TextView
+        	android:id="@+id/tvUrunSiparisZamanPopUp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:text="Siparis Zaman"/>
+        <TextView
+        	android:id="@+id/tvUrunOdemeSekliPopUp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:text="Odeme Sekli"/> 
+        <TextView
+        	android:id="@+id/tvUrunNakliyeSekliPopUp"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:text="Nakliye Sekli"/>    	
+    	<TextView
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="10dp"
+        	android:text="Ürünler:  "/>
+    	<LinearLayout 
+    	android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="7dp"> 
+    	<TextView    	    
+	        android:id="@+id/tvUrunlerPopUp"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:text="Kod - Isim"/>  
+	   </LinearLayout>      	
+          
+	    <TextView
+	        android:id="@+id/tvNotlarPopUp"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:text="Test Pop-Up"/> 
+	</LinearLayout>  
+	</ScrollView>
+    
+   <LinearLayout android:id="@+id/footer" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_alignParentBottom="true" style="@android:style/ButtonBar"
+    android:background="@android:color/transparent"
+    android:gravity="center">
+    <Button        
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btnPopUpDismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Kapat"/>
+    </LinearLayout>
+
+</RelativeLayout>

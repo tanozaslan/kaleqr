@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/rlMainUrunEkle">
+    <LinearLayout android:id="@+id/urunHeader" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_alignParentTop="true" style="@android:style/ButtonBar"
+    android:background="@android:color/black"
+    android:weightSum="10">
+	</LinearLayout>
+	
+	<LinearLayout android:id="@+id/listLL" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="vertical"
+    android:layout_below="@id/urunHeader"
+    android:layout_above="@id/footer"
+    android:background="@drawable/popupborder">
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:weightSum="10"
+	    >
+	    <TextView android:id="@+id/twUrunKod"
+		  android:textSize="16dp"
+		  android:textStyle="bold"
+		  android:textColor="#FFFF00"
+		  android:layout_width="0dp"
+		  android:layout_height="wrap_content"
+		  android:layout_weight="7"
+		  android:text="ÜRÜN"
+	   	  android:gravity="center"/>	  
+		 <TextView android:id="@+id/twUrunMiktar"
+		  android:textSize="16dp"
+		  android:layout_width="0dp"
+		  android:layout_height="wrap_content"
+		  android:layout_weight="3"
+		  android:text="MİKTAR"
+		  android:gravity="center"/>		 
+	    </LinearLayout>
+	    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal"
+	    android:gravity="center"
+	    android:weightSum="10"
+	    >
+		 <View
+		    android:layout_width="0dp"
+		    android:layout_height="3dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="10dp"
+		    android:background="#3973A9"
+		    android:layout_weight="7"
+		    />
+		 <View
+		    android:layout_width="0dp"
+		    android:layout_height="3dp"
+		    android:layout_marginLeft="10dp"
+		    android:layout_marginRight="5dp"
+		    android:background="#3973A9"
+		    android:layout_weight="3"
+		    />	 
+	    </LinearLayout>
+		<ListView
+			android:id="@+android:id/list"
+			android:layout_width="match_parent"
+			android:layout_height="fill_parent" >
+		</ListView>
+						
+	</LinearLayout>
+	
+   
+    <LinearLayout android:id="@+id/footer" android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:layout_alignParentBottom="true" style="@android:style/ButtonBar">
+    <Button android:id="@+id/btnScan" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:text="@string/scan" />
+    <Button android:id="@+id/btnSiparisEkran" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_weight="1"
+        android:text="@string/order" />
+	</LinearLayout>
+
+</RelativeLayout>
